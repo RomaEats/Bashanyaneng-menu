@@ -1198,10 +1198,10 @@ function openCodeModal(){
   const isDelivery = currentOrder.mode === "delivery";
   document.getElementById("codeBoxValue").textContent = currentOrder.code;
   document.getElementById("codeModalSub").textContent = isDelivery
-    ? "Show this code to the delivery person."
-    : "Show this code when you collect your order.";
+    ? "Show this code to the delivery person.Show this code to the delivery person. Your order isn't final until the restaurant confirms. Pay only after you get their confirmation."
+    : "Show this code when you collect your order. Your order isn't final until the restaurant confirms. Pay only after you get their confirmation.";
   document.getElementById("codeHint").innerHTML = isDelivery
-    ? "Tap both buttons so the restaurant and the delivery person both get your details. Screenshot this code.<br><br>Remember to send both messages. This will not be done automatically. <br>Hopola ho romella melaetsa ena e le 'meli. Sena ha sena iketsa."
+    ? "Tap both buttons so the restaurant and the delivery person both get your details. Screenshot this code. <br><br>Remember to send both messages. This will not be done automatically.<br>Hopola ho romella melaetsa ena e le 'meli. Sena ha sena iketsa."
     : "Tap the button to send your order. Screenshot this code.";
 
 
